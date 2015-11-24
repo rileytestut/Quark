@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quark" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2PM-w7-ndg">
+                                <rect key="frame" x="0.0" y="0.0" width="960" height="1080"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RdX-gw-n7M" userLabel="view1">
+                                        <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="0.2410687695" blue="0.2111801103" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyX-YP-hx4" userLabel="view2">
+                                        <rect key="frame" x="0.0" y="540" width="960" height="540"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.40135210989999998" green="0.66666666669999997" blue="0.21530786939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.24106876945302225" blue="0.21118011026906813" alpha="1" colorSpace="calibratedRGB"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Crp-Q4-1IH">
+                                <rect key="frame" x="960" y="0.0" width="960" height="1080"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJZ-wa-um9" userLabel="view3">
+                                        <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.15678104961833073" green="0.25101153100485407" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPv-AF-J6I" userLabel="view4">
+                                        <rect key="frame" x="0.0" y="540" width="960" height="540"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="0.97223528129138848" blue="0.27813226415040726" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.2410687695" blue="0.2111801103" alpha="1" colorSpace="calibratedRGB"/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2PM-w7-ndg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2Ca-86-doe"/>
+                            <constraint firstItem="Crp-Q4-1IH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="6Bm-vs-gwr"/>
+                            <constraint firstItem="2PM-w7-ndg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="dHv-7s-kzw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2PM-w7-ndg" secondAttribute="bottom" id="ewc-q6-jzL"/>
+                            <constraint firstAttribute="trailing" secondItem="Crp-Q4-1IH" secondAttribute="trailing" id="gxc-gW-fBM"/>
+                            <constraint firstItem="Crp-Q4-1IH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="k9j-cb-Seq"/>
+                            <constraint firstItem="2PM-w7-ndg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mrl-Zi-bkO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Crp-Q4-1IH" secondAttribute="bottom" id="vrA-Te-yMT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="view1" destination="RdX-gw-n7M" id="BRy-90-Gff"/>
+                        <outlet property="view2" destination="rJZ-wa-um9" id="2HO-3z-5yW"/>
+                        <outlet property="view3" destination="cyX-YP-hx4" id="aQO-nK-Qzs"/>
+                        <outlet property="view4" destination="SPv-AF-J6I" id="ccK-Ge-cDx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
